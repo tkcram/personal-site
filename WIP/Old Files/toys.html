@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tk Cram - Technology</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cormorant+Garamond:wght@300&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+	<script src="Scripts/script.js"></script>
+</head>
+<body>
+	<header>
+		<div id="logo"><a href="index.html">Tk Cram</a></div>
+		<nav>
+			<ul class="navigation">
+				<li id="nav-skills"><a href="skills.html">Writing</a></li>
+				<li id="nav-toys" class="colour-toys"><a href="toys.html">Technology</a></li>
+				<li id="nav-diet"><a href="diet.html">Art</a></li>
+				<li id="nav-about"><a href="about.html">About</a></li>
+				<li id="nav-follow"><a href="https://www.instagram.com/pascal.barks/" target="_blank">Follow</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="header-bar colour-toys"></div>
+	<!-- Blurb -->
+	<div class="blurb">
+		<p>I have so many fun toys I couldn't possibly show you all of them here (I'm spoiled, I know). So instead, we made a top ten list of the best toys in the house. You won't believe #3! And if you want to buy your own, just click on the image!</p>
+	</div>
+	<!-- Tabs -->
+	<div class="tab-nav">
+		<a class="tab-button colour-toys active" id="about-bio-button" onclick="tabScript('about-bio')">Solo Projects</a>
+		<a class="tab-button colour-about" id="about-family-button" onclick="tabScript('about-family')">Group Projects</a>
+	</div>
+	<div class="tabs-bar colour-toys"></div>	
+	<!-- Content -->
+	<ul class="project-list">
+		<li class="project-item project-hover">
+				<img class="project-image" src="images/skills-sit.jpeg" alt="dog sitting"/> 
+				<div class="project-overlay colour-skills">
+					<p class="project-overlay-text">Indigenous Data Soveriegnty & Open Data</p>
+				</div>
+		</li>
+		<li class="project-item project-hover">
+				<img class="project-image" src="images/skills-down.jpeg" alt="dog lying down"/> 
+				<div class="project-overlay colour-skills">
+					<p class="project-overlay-text">VR as</p>
+				</div>
+		</li>
+		<li class="project-item project-hover">
+				<img class="project-image" src="images/skills-touch.jpeg" alt="dog touching hand with nose"/> 
+				<div class="project-overlay colour-skills">
+					<p class="project-overlay-text">Following the Yellow Brick Road</p>
+				</div>
+		</li>
+		<li class="project-item project-hover">
+				<img class="project-image image-still" src="images/skills-htouch.jpeg" alt="dog touching hand above them with nose"/> 
+				<div class="project-overlay colour-skills">
+					<p class="project-overlay-text">Some Katoa Work</p>
+				</div>
+		</li>
+	</ul>
+	<!-- End Content -->
+	<footer>
+		<p>&copy; Tk Cram; 2022 - <a href="mailto:scram142@pratt.edu">contact</a></p>
+	</footer>
+</body>
+</html>

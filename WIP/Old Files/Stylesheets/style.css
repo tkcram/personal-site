@@ -14,16 +14,16 @@ body {
 
 /*Colours*/
 .colour-skills {
-  background-color: #696969;
+  background-color: #ff595e;
 }
 .colour-toys {
-  background-color: #696969;
+  background-color: #ffca3a;
 }
 .colour-diet {
-  background-color: #696969;
+  background-color: #8ac926;
 }
 .colour-about {
-  background-color: #696969;
+  background-color: #1982c4;
 }
 
 /***HEADER***/
@@ -75,19 +75,19 @@ header {
 }
 /**Hover**/
 #nav-skills:hover {
-  background-color: #696969;
+  background-color: #ff595e;
 }
 #nav-toys:hover {
-  background-color: #696969;
+  background-color: #ffca3a;
 }
 #nav-diet:hover {
-  background-color: #696969;
+  background-color: #8ac926;
 }
 #nav-about:hover {
-  background-color: #696969;
+  background-color: #1982c4;
 }
 #nav-follow:hover {
-  background-color: #696969;
+  background-color: #6a4c93;
 }
 
 /**Graphics**/
@@ -228,19 +228,10 @@ footer a {
   border-top: 4px solid #1A1110;
   display: flex;
   flex-flow: row nowrap;
-    position: relative;
-
 }
 .landing-box:last-child {
   border-right: none;
 }
-.landing-box img {
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
-  position: absolute;
-  }
-
 .landing-link {
   align-items: center;
   display: flex;
@@ -248,7 +239,6 @@ footer a {
   justify-content: center;
   position: relative;
   width: 100%;
-  text-align:  center;
 }
 .landing-link p {
   color: black;
@@ -272,8 +262,8 @@ footer a {
 }
 
 /*Images*/
-/*#landing-skills {
-  background-image: url('../images/WIP-Logo.png');
+#landing-skills {
+  background-image: url('../images/skillsbg.png');
 }
 #landing-toys {
   background-image: url('../images/toysbg.png');
@@ -286,7 +276,7 @@ footer a {
 }
 #landing-about {
   background-image: url('../images/aboutbg.png');
-}*/
+}
 
 /**Skills**/
 
