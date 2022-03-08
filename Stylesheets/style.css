@@ -1,4 +1,46 @@
-/****BODY****/
+/****Testing****/
+
+/****WIP****/
+#construction{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+}
+#construction-kiwi{
+  height: 75vh;
+  object-fit: contain;
+}
+
+.construction-message {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0 24px;
+}
+/****Initialisation****/
+/*Colours*/
+:root {
+  --red: #ff595e;
+  --yellow: #ffca3a;
+  --green: #8ac926;
+  --blue: #1982c4;
+}
+
+.colour-publications {
+  background-color: var(--red);
+}
+.colour-projects {
+  background-color: var(--yellow);
+}
+.colour-creative {
+  background-color: var(--green);
+}
+.colour-about {
+  background-color: var(--blue);
+}
+
+/*Formatting*/
 html,body {
   background-color: #f9f9f9;
   margin: 0;
@@ -7,23 +49,9 @@ html,body {
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lora', serif;
   min-height: 100vh;
   position: relative;
-}
-
-/*Colours*/
-.colour-skills {
-  background-color: #696969;
-}
-.colour-toys {
-  background-color: #696969;
-}
-.colour-diet {
-  background-color: #696969;
-}
-.colour-about {
-  background-color: #696969;
 }
 
 /***HEADER***/
@@ -36,7 +64,7 @@ header {
 /**Logo**/
 #logo {
   float: left;
-  font-family: 'Bonheur Royale', cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 42px;
   margin-left: 20px;
 }
@@ -48,10 +76,11 @@ header {
 /**Nav Bar**/
 .navigation {
   display: flex;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
   justify-content: flex-end;
   list-style: none;
-  margin: 0; 
+  margin: 0;
+  margin-right: 10px; 
 }
 .navigation a {
   color: black;
@@ -60,6 +89,43 @@ header {
   padding: 1em;
   text-decoration: none;
 }
+/*About Dropdown*/
+#nav-about-dropdown {
+  background-color: #f9f9f9;
+  box-shadow: -10px 10px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  list-style: none;
+  margin: 0;
+  margin-right: 10px;
+  padding:  0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+#nav-about-dropdown a:hover {
+  background-color: var(--blue);
+}
+
+#nav-about:hover #nav-about-dropdown {
+  display: block;
+}
+
+/*Hover*/
+#nav-publications:hover {
+  background-color: var(--red);
+}
+#nav-projects:hover {
+  background-color: var(--yellow);
+}
+#nav-creative:hover {
+  background-color: var(--green);
+}
+#nav-about:hover {
+  background-color: var(--blue);
+}
+
+/*Mobile view*/
 @media only screen and (max-width: 830px) {
   header {
     flex-direction: column;
@@ -72,22 +138,6 @@ header {
     margin: auto;
     text-align: center;
   }
-}
-/**Hover**/
-#nav-skills:hover {
-  background-color: #696969;
-}
-#nav-toys:hover {
-  background-color: #696969;
-}
-#nav-diet:hover {
-  background-color: #696969;
-}
-#nav-about:hover {
-  background-color: #696969;
-}
-#nav-follow:hover {
-  background-color: #696969;
 }
 
 /**Graphics**/
@@ -117,7 +167,7 @@ header {
 }
 .tab-nav {
   display: flex;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-left: auto;
   margin-right: auto;
 /*  padding-top: 30px;
@@ -204,8 +254,8 @@ footer {
   bottom:0;
   color: white;
   height:50px;
-  position: absolute;
   width:100%;
+  position: absolute;
 }
 footer p {
   padding-left: 20px;
@@ -215,6 +265,7 @@ footer a {
 }
 
 /***PAGES***/
+
 /**Landing**/
 .landing-page {
   display: flex;
@@ -223,7 +274,7 @@ footer a {
 .landing-page > * {
   flex: 1;
 }
-.landing-box {
+.landing-frame {
   border-right: 4px solid #1A1110;;
   border-top: 4px solid #1A1110;
   display: flex;
@@ -231,10 +282,10 @@ footer a {
     position: relative;
 
 }
-.landing-box:last-child {
+.landing-frame:last-child {
   border-right: none;
 }
-.landing-box img {
+.landing-frame img {
   height: 100%;
   width: 100%;
   object-fit: fill;
@@ -252,7 +303,7 @@ footer a {
 }
 .landing-link p {
   color: black;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 36px;
   margin: 0;
   position: absolute;
@@ -318,7 +369,7 @@ footer a {
   width: 200px;
 }
 .toys-text h2 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /**Diet**/
