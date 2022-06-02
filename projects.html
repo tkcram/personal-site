@@ -7,11 +7,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<script src="Scripts/script.js"></script>
+	<script src="https://kit.fontawesome.com/c7d9c001a2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<div id="logo"><a href="index.html">Tk Cram</a></div>
+		<div id="logo"><a href="index.html"><h1>Tk Cram</h1></a></div>
 		<nav>
 			<ul class="navigation">
 				<li id="nav-publications"><a href="publications.html">Publications</a></li>
@@ -19,26 +19,462 @@
 				<li id="nav-creative"><a href="creative.html">Creative</a></li>
 				<li id="nav-about"><a href="about.html">About</a>
 					<ul id="nav-about-dropdown">
-						<li><a href="#">Biography</a></li>
-						<li><a href="#">Resume</a></li>
+						<li><a href="about.html">Biography</a></li>
+						<li><a href="Pdfs/Tk_Cram_Resume.pdf" target="_blank">Resume</a></li>
 						<li><a href="mailto:scram142@pratt.edu">Contact</a></li>
 					</ul>
-				</li> 
+				</li> 			
 			</ul>
 		</nav>
 	</header>
-	<!-- Content -->
-	<div class='header-bar colour-projects'></div>
-	<div id='construction'>
-		<img id='construction-kiwi' src="images/construction-kiwi-yellow.png">
-		<div class="construction-message">
-			<h1>This page is under construction</h1>
-			<p>Please bear with us while we get this page ready for launch</p>
+
+	<main>
+		<div class='header-bar colour-projects'></div>
+		<div class="blurb">
+			<p> This section contains a collection of technical projects, produced both as assignments or as side-projects, on topics ranging from avian distributions and rental housing, through to Dungeons and Dragons and my dog Pascal.</p>
 		</div>
-	</div>
-	<!-- End Content -->
+		<div class="tab-nav">
+			<a class="tab-button tab-projects" href="#section-viz">Visualisations</a>
+			<a class="tab-button tab-projects" href="#section-web">Websites</a>
+			<a class="tab-button tab-projects" href="#section-code">Programming</a>
+		</div>
+		<div class="tabs-bar colour-projects"></div>
+
+		<div class="works" id="works-projects">
+
+			<h2 class="works-category" id="section-viz">Visualisations</h2>
+
+			<div class="works-list">
+				<div id="item-birdmap" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-birdmap">
+						<img class="works-image" src="images/projects-birdmap.png" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>NZ Bird Map</p>
+						<div>
+							<a class="works-button-download" href="https://ivs22.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-birdmap"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-birdnet" class="works-item works-new">
+					<a class="works-button-modal" data-modal-id="modal-birdnet">
+						<img class="works-image" src="https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2022/04/test1-1.jpg?resize=768%2C811&ssl=1" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>Bird Network</p>
+						<div>
+							<a class="works-button-download" href="https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2022/04/test1-1.jpg?resize=768%2C811&ssl=1" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-birdnet"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-rent" class="works-item works-new">
+					<a class="works-button-modal" data-modal-id="modal-rent">
+						<img class="works-image" src="https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2022/03/Screen-Shot-2022-03-03-at-2.11.55-PM.png?w=1680" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>Renting in NZ</p>
+						<div>
+							<a class="works-button-download" href="https://public.tableau.com/app/profile/tk.cram/viz/MedianNZWeeklyRent/Dashboard1" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-rent"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-colour" class="works-item works-new works-private">
+					<a class="works-button-modal" data-modal-id="modal-colour">
+						<img class="works-image" src="https://i.imgur.com/NGBoJad.png" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>A brief history of colour</p>
+						<div>
+							<a class="works-button-download" href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=10IEKECW-7KBUyKdeAOsn2Y5Yqr9VJdEiPw2q3NabjoQ&font=Default&lang=en&initial_zoom=2&height=650" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-colour"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="works-category" id="section-web">Websites</h2>
+
+			<div class="works-list">
+				<div id="item-dnd" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-dnd">
+						<img class="works-image" src="images/projects-dnd.png" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>Dungeons and Dragons</p>
+						<div>
+							<a class="works-button-download" href="https://puis22.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-dnd"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-pascal" class="works-item">
+					<a class="works-button-modal" data-modal-id="modal-pascal">
+						<img class="works-image" src="images/projects-pascal.png" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>Pascal's Borks</p>
+						<div>
+							<a class="works-button-download" href="https://scram142.neocities.org" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-pascal"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-vr" class="works-item">
+					<a class="works-button-modal" data-modal-id="modal-vr">
+						<img class="works-image" src="Images/projects-vr.png" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>VR as</p>
+						<div>
+							<a class="works-button-download" href="https://commons.pratt.edu/vras/" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-vr"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-nyt" class="works-item works-new works-private">
+					<a class="works-button-modal" data-modal-id="modal-nyt">
+						<img class="works-image" src="images/projects-nyt.png" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>NYT Bestseller List</p>
+						<div>
+							<a class="works-button-download" href="http://fate-piquant-spike.glitch.me" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-nyt"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-personal" class="works-item" style="display:none;">
+					<a class="works-button-modal" data-modal-id="modal-personal">
+						<img class="works-image" src="images/construction-kiwi-yellow.png" alt=""/>
+					</a>
+					<div class="works-title colour-projects">
+						<p>This site here!!</p>
+						<div>
+							<a class="works-button-download" href="https://github.com/tkcram/personal-site" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-personal"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="works-category" id="section-code">Programming</h2>
+
+			<div class="works-list">
+				<div id="item-dndapi" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-dndapi">
+						<img class="works-image" src="images/projects-dndapi.png" alt=""/>
+					</a>
+					<div class="works-title works-nolink colour-projects">
+						<p>Dungeons and Dragons</p>
+						<div>
+							<a class="works-button-download" href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-dndapi"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="modal-wrapper">
+			<div id="modal-birdmap" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/projects-birdmap.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://ivs22.netlify.app/" target="_blank"><h2 class="modal-title modal-title-projects">New Zealand Bird Sighting Map</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>The birds of New Zealand are both beautiful and bountiful. It’s no small wonder then that the country fosters a community centred around their observation and recording. In 2021 alone there were over a million observations logged to the New Zealand Bird ATLAS, one of the largest bird watching databases. It can be hard to visualise such a wealth of data, but this project aims to do so in a way that is easily understood by the user.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p>Wrote a Python script to parse over one million rows of raw data and create a JSON blob to be used by the front end</p></li>
+								<li><p>Built an interface using D3.js to visualise the data and create and interactive user experience</p></li>
+								<li><p>Conducted User Experience (UX) research sessions to improve the quality of the interface and uncover additional features to be developed</p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://studentwork.prattsi.org/infovis/visualization/mapping-bird-sightings-in-new-zealand/" target="_blank">Full Report</a>, 
+							<a href="https://github.com/tkcram/ivs22" target="_blank">Github Repo</a>, 
+							<a href="https://ebird.org/science/use-ebird-data" target="_blank">Source Data</a>
+						</p></dd>
+
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>HTML, CSS, JS, D3, Python, Data Visualisation, Data Manipulation, User Research, Mapping, INFO 658, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-birdnet" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2022/04/test1-1.jpg?resize=768%2C811&ssl=1" alt="Red Construction kiwi" /><!-- Find Higher Res Image -->
+				<div class="modal-text">
+					<a class="modal-link" href="https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2022/04/test1-1.jpg?resize=768%2C811&ssl=1" target="_blank"><h2 class="modal-title modal-title-projects">Birds of a Feather Network Together</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>New Zealand boasts an amazing array of avians, be it the Kiwi as it’s national icon, the beautiful songbird that is the Tui, or the cheeky parrot the Kea. That is why it is of great concern that approximately 74% of the 168 extant species are threatened or endangered. A significant contributing factor to this is habitat change due to the ongoing effects of climate change, including the degradation of food sources. 
+						Since nothing exists in a vacuum, this report seeks to examine how different species are connected by the food they eat and perhaps contribute to the effort to save the birds.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p>Developed a Python script that converted the dataset from a list of bird-food relationships into a network of bird pairs based on overlapping food sources</p></li>
+								<li><p>Imported the data into Gephi and then analysed the data and explored various network shapes</p></li>
+								<li><p>Coloured, resized, and labelled the network diagram by to create a final refined version</p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://studentwork.prattsi.org/infovis/visualization/birds-of-a-feather-are-connected-together/" target="_blank">Full Report</a>, 
+							<a href="https://catalogue.data.govt.nz/dataset/bird-plant-interactions" target="_blank">Source Data</a>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Data Analysis, Data Visualisation, Networks, Python, Gephi, INFO 658, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-rent" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2022/03/Screen-Shot-2022-03-03-at-2.11.55-PM.png?w=1680" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://public.tableau.com/app/profile/tk.cram/viz/MedianNZWeeklyRent/Dashboard1" target="_blank"><h2 class="modal-title modal-title-projects">Median NZ Rent</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>With each passing day, the cost of shelter becomes increasingly expensive. Rising house prices have been discussed at length. With the median house price recently surpassing $1,000,000 NZD (Per RNZ) many Kiwi’s are being priced out of ever owning their own home. Facing a lifetime of renting ahead of them, it is worthwhile taking the time to look more closely at the trends in this ever growing market.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p>Utilised Tableau to create a variety of data visualisations from approximately 8000 rows of aggregated rental income data</p></li>
+								<li><p>Curated a selection of visualisations and created a single dashboard that showed an overarching narative with a consistent visual theme</p></li>
+								<li><p>Designed a layer of interactive filtering using Tableau to allow the user to explore the data based on region, income bracket, and landlord type</p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://studentwork.prattsi.org/infovis/labs/charts/median-weekly-rent-in-new-zealand/" target="_blank">Full Report</a>, 
+							<a href="https://catalogue.data.govt.nz/dataset/census-rent-and-household-income" target="_blank">Source Data</a>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Data Analysis, Data Visualisation, GIS, Tableau, Charts & Graphs, INFO 658, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-colour" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="https://i.imgur.com/NGBoJad.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=10IEKECW-7KBUyKdeAOsn2Y5Yqr9VJdEiPw2q3NabjoQ&font=Default&lang=en&initial_zoom=2&height=650" target="_blank"><h2 class="modal-title modal-title-projects">History of colours</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>Ever since Grecian times philosophers such as Aristotle have pondered the nature of colour. Many have followed in their footsteps, from Ibn al-Haytham to Leonardo da Vinci. However in 1704 our conceptualisation of colour shifted dramatically with Newton’s “Opticks” and their revolutionary colour wheel. This shift inspired many to see if a model could be created to account for all the colours a human could perceive. In the 300 years since, this model has taken many shapes, and been used to explain many phenomena from the physical to the emotional, and even the spiritual. This timeline serves as an overview of a handful of the most significant developments in that time, and as a launching point into one of the world’s most colourful histories.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://studentwork.prattsi.org/infovis/labs/a-brief-history-of-modern-colour-models/" target="_blank">Full Report</a>, 
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Research; Google Sheets; TimelineJS, INFO 658, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-dnd" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/projects-dnd.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://puis22.netlify.app/" target="_blank"><h2 class="modal-title modal-title-projects">Prattgeons and Pythons</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>This project is a combination of work from both Programming for Cultural Heritage and Programming User Interfaces. The goal was to use the DnD 5e API, a database containing information about Dungeons and Dragons 5th edition, to create characters, monsters, and dungeons, and put them all together in a small browser based game.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p>Researched Dungeons and Dragons game rules in order to recreate key gameplay mechanics in JavaScript, in order to create an accurate and enjoyable game experience</p></li>
+								<li><p>Built an interactive website hosted on Netlify that allowed users to generate a character and move through the dungeon</p></li>
+								<li><p>Called a custom API to fetch maze and character JSON data and rendered it into the DOM</p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://github.com/tkcram/puis22" target="_blank">Github Repo</a>, 
+							<a href="https://www.dnd5eapi.co/" target="_blank">Data Source</a></dd>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>JavaScript, HTML, CSS, Github, Web Development, INFO 637, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-pascal" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/projects-pascal.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://scram142.neocities.org" target="_blank"><h2 class="modal-title modal-title-projects">Pascal's Borks</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>Given a dog's status as man's best friend, it seemed only appropriate that I should make a website for my own. Here you'll find everything you need to know about Pascal of Selby, from his favourite food and toys, to all the amazing tricks that he can do. It also includes links of where to find not only more of him, but some of his awesome friends as well.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p>Designed a layout and theme that aligned with modern practices and best represented the client on the internet</p></li>
+								<li><p>Developed a website using a variety of HTML elements in order to demonstrate knowledge and use cases</p></li>
+								<li><p>Wrote all the copy and made all of the graphics, photos, and videos for the site</p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>HTML, CSS, JavaScript, INFO 654, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-vr" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/projects-vr.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://commons.pratt.edu/vras/" target="_blank"><h2 class="modal-title modal-title-projects">VR as...</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>VR is an emergent and multifaceted technology. So often the conversation revolves either around its uses in gaming or, in recent times, Facebook’s foray into the future of social media. While both of these develop- ments are fascinating, we believe that VR has potential to be used across all facets of our society, from arts and entertainment, to new ways to educate and aid individuals, and even to help push humans forward into the final frontier. We will create a website to explore and communicate many of these potential facets.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p>Worked with WordPress's theme tools to develop an aesthetic that aligned with the teams vision for the project</p></li>
+								<li><p>Researched and wrote two articles, "Introduction to VR" and "VR as Teleoperations"</p></li>
+								<li><p>Used InDesign to synthesise the report documents that were turned in for the initial proposal and final submission<p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="Pdfs/VR_Tk_Cram.pdf" target="_blank">Full Report</a>, 
+							<a href="https://itf21.wordpress.com" target="_blank">Archive</a>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Content Writing, Research, Wordpress, InDesign, INFO 654, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-nyt" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/projects-nyt.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="http://fate-piquant-spike.glitch.me" target="_blank"><h2 class="modal-title modal-title-projects">NYT Bestseller</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p></p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>INFO 637, Pratt</p></dd>
+
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-personal" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/construction-kiwi-yellow.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://github.com/tkcram/personal-site" target="_blank"><h2 class="modal-title modal-title-projects">Portfolio Site</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p></p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd></dd>
+
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://github.com/tkcram/personal-site" target="_blank">Github Repo</a></dd>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p></p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-dndapi" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/projects-dndapi.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="" target="_blank"><h2 class="modal-title modal-title-projects">DNDAPI</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>This project is a combination of work from both Programming for Cultural Heritage and Programming User Interfaces. The goal was to use the DnD 5e API, a database containing information about Dungeons and Dragons 5th edition, to create characters, monsters, and dungeons, and put them all together in a small browser based game.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p>Developed a Python script to generate a character based on the DnD5e ruleset by calling the DnD 5e API to retrieve the specific character data</p></li>
+								<li><p>Generated a maze using a randomised depth first search, and then populated it with items and monsters from the API</p></li>
+								<li><p>Exposed character and maze creation endpoints using Flask and hosted the API on Heroku</p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://github.com/tkcram/pfchs22" target="_blank">Github Repo</a>, 
+							<a href="https://www.dnd5eapi.co/" target="_blank">Data Source</a></dd>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Python, Flask, Heroku, INFO 664, Pratt</p></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</main>
 	<footer>
 		<p>Tk Cram - 2022</p>
 	</footer>
 </body>
+<script src="Scripts/script.js"></script>
 </html>
