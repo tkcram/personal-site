@@ -7,38 +7,376 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<script src="Scripts/script.js"></script>
+	<script src="https://kit.fontawesome.com/c7d9c001a2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<div id="logo"><a href="index.html">Tk Cram</a></div>
+		<div id="logo"><a href="index.html"><h1>Tk Cram</h1></a></div>
 		<nav>
 			<ul class="navigation">
-				<li id="nav-publications"><a href="publications.html">Publications</a></li>
+				<li id="nav-reports"><a href="reports.html">Reports</a></li>
 				<li id="nav-projects"><a href="projects.html">Projects</a></li>
 				<li id="nav-creative" class='colour-creative'><a href="creative.html">Creative</a></li>
 				<li id="nav-about"><a href="about.html">About</a>
 					<ul id="nav-about-dropdown">
-						<li><a href="#">Biography</a></li>
-						<li><a href="#">Resume</a></li>
+						<li><a href="about.html">Biography</a></li>
+						<li><a href="Pdfs/Tk_Cram_Resume.pdf" target="_blank">Resume</a></li>
 						<li><a href="mailto:scram142@pratt.edu">Contact</a></li>
 					</ul>
-				</li> 
+				</li> 			
 			</ul>
 		</nav>
 	</header>
-	<!-- Content -->
-	<div class='header-bar colour-creative'></div>
-	<div id='construction'>
-		<img id='construction-kiwi' src="images/construction-kiwi-green.png">
-		<div class="construction-message">
-			<h1>This page is under construction</h1>
-			<p>Please bear with us while we get this page ready for launch</p>
+	<main>
+		<div class='header-bar colour-creative'></div>
+		<div class="blurb">
+			<p> This section contains a collection of creative works, produced both as assignments or as side-projects, on topics ranging from templates and report layouts, through to circus performances and random sketches.</p>
+		</div>
+		<div class="tab-nav">
+			<a class="tab-button tab-creative" href="#section-design">Design</a>
+			<a class="tab-button tab-creative" href="#section-circus">Circus</a>
+			<!-- <a class="tab-button tab-creative" href="#section-art">Art</a> -->
+		</div>
+		<div class="tabs-bar colour-creative"></div>
+		<div class="works" id="works-creative">
+			<h2 class="works-category" id="section-design">Design</h2>
+			
+			<div class="works-list">
+				<div id="item-camp" class="works-item">
+					<a class="works-button-modal" data-modal-id="modal-camp">
+						<img class="works-image" src="Images/creative-camp.png" alt=""/>
+					</a>
+					<div class="works-title works-nolink colour-creative">
+						<p>Wairoa Camp Report</p>
+						<div>
+							<a class="works-button-download" href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-camp"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-housing" class="works-item">
+					<a class="works-button-modal" data-modal-id="modal-housing">
+						<img class="works-image" src="Images/creative-housing.png" alt=""/>
+					</a>
+					<div class="works-title works-nolink colour-creative">
+						<p>Place-Based Housing</p>
+						<div>
+							<a class="works-button-download" href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-housing"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="works-item" style="display:none">
+					<img class="works-image" src="images/construction-kiwi-green.png" alt="Red Construction kiwi" />
+					<div class="works-title colour-creative">
+						<p>Diary</p>
+						<div>
+							<a><i class="fa-solid fa-link"></i></a>
+							<a class="modal-button" data-modal-id="modal-1"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="works-category" id="section-circus">Circus</h2>
+
+			<div class="works-list">
+				<div id="item-move" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-move">
+						<img class="works-image" src="images/creative-move.png" alt=""/>
+					</a>
+					<div class="works-title colour-creative">
+						<p>Your Move</p>
+						<div>
+							<a class="works-button-download" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGds1doyf9kEp3tmxeiMFa8W" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-move"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-story" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-story">
+						<img class="works-image" src="images/creative-story.png" alt=""/>
+					</a>
+					<div class="works-title colour-creative">
+						<p>Our Story</p>
+						<div>
+							<a class="works-button-download" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGfX_PXFe0btwtVL8CEsQJVx" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-story"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-worlds" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-worlds">
+						<img class="works-image" src="images/creative-worlds.png" alt=""/>
+					</a>
+					<div class="works-title colour-creative">
+						<p>Between Worlds</p>
+						<div>
+							<a class="works-button-download" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGfItwyv-rsXQK0xfrrWXEpA" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-worlds"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-toybox" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-toybox">
+						<img class="works-image" src="images/creative-toybox.png" alt=""/>
+					</a>
+					<div class="works-title colour-creative">
+						<p>Life in the Toybox</p>
+						<div>
+							<a class="works-button-download" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGffRK936pAS2OiLDuND4zIm" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-toybox"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="item-dystopia" class="works-item works-favourite">
+					<a class="works-button-modal" data-modal-id="modal-dystopia">
+						<img class="works-image" src="images/creative-dystopia.png" alt=""/>
+					</a>
+					<div class="works-title colour-creative">
+						<p>Dystopian Dreams</p>
+						<div>
+							<a class="works-button-download" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGdptZpfZtv-L2kBquEAg8M2" target="_blank"><i class="fa-solid fa-link"></i></a>
+							<a class="works-button-modal" data-modal-id="modal-dystopia"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!-- 			<h2 class="works-category" id="section-art">Art</h2>
+
+			<div class="works-list">
+				<div class="works-item">
+					<img class="works-image" src="images/construction-kiwi-green.png" alt="Red Construction kiwi" />
+					<div class="works-title colour-creative">
+						<p>Sketchpad</p>
+						<div>
+							<a><i class="fa-solid fa-link"></i></a>
+							<a class="modal-button" data-modal-id="modal-1"><i class="fa-solid fa-circle-info"></i></a>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<div class="modal" id="modal-wrapper">
+			<div id="modal-camp" class="modal-content">
+				<button class="modal-close modal-close-creative">x</button>
+				<img class=modal-image src="Images/creative-camp.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" target="_blank"><h2 class="modal-title modal-title-reports"></h2></a>
+
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd>In January 2022, after postponements and reducing the number of rangatahi who could attend and the length of the wānanga because of Covid, Morehu and Bronson ran a six-day (five night) wānanga for around 30 rangatahi at Ruataniwha Mar- ae in Wairoa, Hawke’s Bay. Funding for the wānanga, Te Oho Ake, was provided by the MAS Foundation.</dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Citation</h3></dt>
+						<dd><p></p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd>Design, InDesign, Layout</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-housing" class="modal-content">
+				<button class="modal-close modal-close-creative">x</button>
+				<img class=modal-image src="Images/creative-housing.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" target="_blank"><h2 class="modal-title modal-title-reports">Place-Based Housing and Urban Development Pilot – Hastings: Reducing the number of tamariki living in unhealthy homes or at risk of homelessness</h2></a>
+
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>Declining housing affordability for Māori has seen a fall in Māori home ownership as well as the inability of many whānau to find good quality rental accommodation they can afford. In this context, whānau-owned homes have become even more of a precious taonga (treasure) that provide shelter and support for whānau. While this expression of whanaungatanga (kinship) provides a roof over people’s heads it may not necessarily provide them with their own space. If a home is crowded, common spaces may be re-purposed as sleeping spaces and whanau may not feel that their shelter is permanent or desirable.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Citation</h3></dt>
+						<dd><p>Cram, F. & Tawhai, S. (2021). Place-Based Housing and Urban Development Pilot – Hastings: Reducing the number of tamariki living in unhealthy homes or at risk of homelessness. Evaluation report. Prepared for Hawke’s Bay District Health Board. Auckland: Katoa Ltd.</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Design, InDesign, Layout</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-move" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/creative-move.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGds1doyf9kEp3tmxeiMFa8W" target="_blank"><h2 class="modal-title modal-title-projects">Carnaval de la Noche: Your Move</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>When games, come to life. It was Professor Plum, in the Conservatory, with the candlestick! Go directly to jail, do not pass go, do not collect $200! Right hand, on green! Bingo! Checkmate! Performers will create an act, inspired by their chosen board game (or similar). You may seek to transport the audience to a scene from your game, or perhaps your piece will be a looser interpretation. Monopoly. Cluedo. Battleships. Snakes n’ Ladders. Blackjack. Jenga. The choice is yours…. Are you game?</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://www.flickr.com/photos/80568331@N04/albums/72157674574258745" target="_blank">Photos by Peter Jennings</a>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Circus, Cast, Aerials, Trapeze, Singles Trapeze, Lucky Thirteen, Carnavale de la Noche</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-story" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/creative-story.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGfX_PXFe0btwtVL8CEsQJVx" target="_blank"><h2 class="modal-title modal-title-projects">Our Story</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>For Silver Circle’s 10 year anniversary, we invite you to take a look behind the scenes of one of Auckland’s most prominent circus communities. OUR STORY will have you see some of New Zealand’s best circus artists performing acrobatics, aerial arts, contortion and more! Silver Circle’s philosophy of open doors has enabled ordinary people to trade shirts for sequins and live the dream of running away with the circus. Join us for three nights of laughter and fascination as you discover many typical situations that members of Silver Circle encounter during a training session, and watch them as they perform awe inspiring stunts and tricks!</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://www.flickr.com/photos/80568331@N04/albums/72157674574258745" target="_blank">Photos by Peter Jennings</a>, 
+							<a href="https://www.facebook.com/media/set/?set=a.10157853677332516" target="_blank">Photos by Scott Marks</a>						
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Circus, Cast, Aerials, Trapeze, Doubles Trapeze, Silver Circle</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-worlds" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/creative-worlds.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGfItwyv-rsXQK0xfrrWXEpA" target="_blank"><h2 class="modal-title modal-title-projects">Between Worlds</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>Welcome to Silver Circle Productions and West City Concert Band's second full length circus and live music extravaganza! "Between Worlds" is a wondrous tale of one woman’s brave journey into a dark, mysterious world to rescue her kidnapped lover. Loosely based on the myth of Orpheus and Eurydice, it is a story of finding strength in the most unexpected of places, told through a cast of talented acrobats and dancers with accompaniment of a live concert band. After the sold out show "Danse Carnivale" in 2014, Silver Circle Productions, Auckland’s largest community circus, and the multiaward winning West City Concert Band come together again to bring you a show of high flying acrobatics, death defying stunts, exquisite dancers and exceptional music that will appeal to all ages.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://www.flickr.com/photos/80568331@N04/albums/72157674574258745" target="_blank">Photos by Peter Jennings</a>, 
+							<a href="https://www.facebook.com/media/set/?set=a.1220882574694949" target="_blank">Photos by Scott Marks</a>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Circus, Cast, Acrobatics, Stunting, Silver Circle</p></dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div id="modal-toybox" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/creative-toybox.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGffRK936pAS2OiLDuND4zIm" target="_blank"><h2 class="modal-title modal-title-projects">Life in the Toybox</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>"When we close a toybox, how much do our toys stay with us and how much of us stays with them? From dolls too precious to play with, to teddies long forgotten, Life in the Toybox explores the hidden side of the toys we cherish, abandon, and enjoy. Will you come out to play? With its unique blend of quirky humour, diverse talents, and endless energy, Silver Circle Productions has a reputation for the bizarre and wonderful. In the 2013 Auckland Fringe Festival they triumphed over evil in a young girl’s nightmares and in 2014 they explored a dystopian future full of machines and uniformity. This Fringe they’re back at the Rose Centre with their sixth annual production, Life in the Toybox, inviting you to join them in a world of creativity and colour where the line blurs between who is playing with whom in this circus we call life. Our large, multi-talented, cast will bring you an assortment of acrobatic animals, dancing dolls, aerial figurines and more, and, as always, invite you to step into our world and feel part of the story.</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://www.flickr.com/photos/80568331@N04/albums/72157648565762883" target="_blank">Photos by Peter Jennings</a>, 
+							<a href="https://www.facebook.com/media/set/?set=a.717167561733122" target="_blank">Photos by Scott Marks</a>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Circus, Crew, Stage Manager, Silver Circle</p></dd>
+					</dl>
+				</div>
+			</div>
+
+			<div id="modal-dystopia" class="modal-content">
+				<button class="modal-close modal-close-projects">x</button>
+				<img class=modal-image src="images/creative-dystopia.png" alt="Red Construction kiwi" />
+				<div class="modal-text">
+					<a class="modal-link" href="https://www.youtube.com/playlist?list=PLggwqVX6zAGdptZpfZtv-L2kBquEAg8M2" target="_blank"><h2 class="modal-title modal-title-projects">Dystopian Dreams</h2></a>
+					<dl>
+						<dt><h3>The Project</h3></dt>
+						<dd><p>Silver Circle returns to the Rose Centre in February to explore a dystopian society where oppression and dehumanisation are the norm. A splash of colour breaks the spell, creating crisis and rebellion, and the citizens struggle to decide on where they want to sit on the scale between freedom and control. Simultaneously challenging and cheeky, inspiring and entertaining, these talented performers will bring a not-so-impossible future to life in front of your eyes. Dystopian Dreams is Silver Circle’s fifth production, building on its impressively successful six year history as a community circus. From acrobats to dancers to aerialists, the skills have gone up another notch including both new performers and the usual suspects. The show embodies contemporary circus, by combining traditional trained circus techniques with dance and theatrical elements. Come prepared for a dynamic and unique production that will challenge, astonish and captivate you and your friends. Keep an open mind, join in the fun, and you won’t regret it!</p></dd>
+
+						<dt><h3>My Contributions</h3></dt>
+						<dd>
+							<ul class="modal-contributions">
+								<li><p></p></li>
+								<li><p></p></li>
+								<li><p></p></li>
+							</ul>
+						</dd>
+
+						<dt><h3>Additional Links</h3></dt>
+						<dd><p>
+							<a href="https://www.flickr.com/photos/80568331@N04/albums/72157641448979673" target="_blank">Photos by Peter Jennings</a>, 
+							<a href="https://www.facebook.com/media/set/?set=a.519651071484773" target="_blank">Photos by Scott Marks</a>
+						</p></dd>
+
+						<dt><h3>Tags</h3></dt>
+						<dd><p>Circus, Cast, Acrobatics, Stunting, Silver Circle</p></dd>
+					</dl>
+				</div>
+			</div>
+			
 		</div>
 	</div>
-	<!-- End Content -->
-	<footer>
-		<p>Tk Cram - 2022</p>
-	</footer>
+</main>
+<footer>
+	<p>Tk Cram - 2022</p>
+</footer>
 </body>
+<script src="Scripts/script.js"></script>
 </html>

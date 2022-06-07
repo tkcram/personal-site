@@ -6,7 +6,7 @@
   --green: #8ac926;
   --blue: #1982c4;
 }
-.colour-publications {
+.colour-reports {
   background-color: var(--red);
   color: white;
 }
@@ -92,7 +92,7 @@ header {
   display: block;
 }
 
-.colour-publications a{
+.colour-reports a{
   color: white;
 }
 .colour-projects a{
@@ -106,10 +106,10 @@ header {
 }
 
 /*Nav Hover*/
-#nav-publications:hover {
+#nav-reports:hover {
   background-color: var(--red);
 }
-#nav-publications:hover a{
+#nav-reports:hover a{
   color: white;
 }
 #nav-projects:hover {
@@ -148,6 +148,9 @@ header {
   #logo {
     margin: auto;
     text-align: center;
+  }
+  #nav-about-dropdown {
+    margin-right: 9%;
   }
 }
 /***Content***/
@@ -189,7 +192,7 @@ header {
 .tab-button:hover{
   border-radius: 2px 2px 0 0;
 }
-.tab-publications:hover{
+.tab-reports:hover{
   background-color: var(--red);
   color: white;
 }
@@ -261,17 +264,20 @@ main {
   width: 100%;
   text-align:  center;
 }
-.landing-link p {
+.landing-text {
   color: black;
   font-family: 'Raleway', sans-serif;
-  font-size: 36px;
+  font-size: 52px;
   margin: 0;
   position: absolute;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: -1px -1px 1px #000;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: upright; 
 }
 .landing-image {
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-size: contain;
   height: 100%;
   position: relative;
   width: 100%;
@@ -282,18 +288,18 @@ main {
   width: 100%;
 }
 /*Landing Images*/
-/*#landing-skills {
-  background-image: url('../images/WIP-Logo.png');
+#landing-reports {
+  background-image: url('../images/landing_reports.png');
 }
-#landing-toys {
-  background-image: url('../images/toysbg.png');
+#landing-projects {
+  background-image: url('../images/landing_projects.png');
 }
-#landing-diet {
-  background-image: url('../images/dietbg.png');
+#landing-creative {
+  background-image: url('../images/landing_creative.png');
 }
 #landing-about {
-  background-image: url('../images/aboutbg.png');
-}*/
+  background-image: url('../images/landing_about.png');
+}
 /**Works**/
 .works{
   padding: 0 20px;
@@ -301,7 +307,7 @@ main {
 .works-category{
   margin: 20px;
 }
-#works-publications .works-category{
+#works-reports .works-category{
     border-bottom: 2px solid var(--red);   
 }
 #works-projects .works-category{
@@ -432,10 +438,10 @@ main {
   text-underline-offset: 2px;
   text-transform: capitalize;
 }
-.modal-title-publications{
+.modal-title-reports{
   text-decoration: underline solid var(--red) 2px;
 }
-.modal-link:hover .modal-title-publications{
+.modal-link:hover .modal-title-reports{
   color: var(--red);
 }
 .modal-title-projects{
@@ -460,7 +466,7 @@ main {
   border-radius: 2px;
   cursor: pointer;
 }
-.modal-close-publications:hover{
+.modal-close-reports:hover{
   background-color: var(--red);
   color: white;
 }
