@@ -300,6 +300,10 @@ main {
 #landing-about {
   background-image: url('../images/landing_about.png');
 }
+
+.landing-frame:hover .landing-overlay{
+  opacity: 0.5;
+}
 /**Works**/
 .works{
   padding: 0 20px;
