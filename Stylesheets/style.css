@@ -293,16 +293,16 @@ main {
 }
 /*Landing Images*/
 #landing-reports {
-  background-image: url('../images/landing_reports.png');
+  background-image: url('../images/landing-reports.png');
 }
 #landing-projects {
-  background-image: url('../images/landing_projects.png');
+  background-image: url('../images/landing-projects.png');
 }
 #landing-creative {
-  background-image: url('../images/landing_creative.png');
+  background-image: url('../images/landing-creative.png');
 }
 #landing-about {
-  background-image: url('../images/landing_about.png');
+  background-image: url('../images/landing-about.png');
 }
 /**Works**/
 .works{
@@ -427,9 +427,18 @@ main {
 .modal-image{
   width: 40%;
   margin-right: 20px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 4px;
   object-fit: contain;
+}
+.modal-image-reports{
+  border-color: var(--red);
+}
+.modal-image-projects{
+  border-color: var(--yellow);
+}
+.modal-image-creative{
+  border-color: var(--green);
 }
 .modal-link {
   text-decoration: none;
@@ -483,6 +492,9 @@ main {
   color: black;
 }
 /**About**/
+.about-div{
+  display: flex; 
+}
 #about-box{
   width: 250px;
   height: 100%;
@@ -498,9 +510,6 @@ main {
   max-width: 200px;
   border-radius: 5%;
 }
-.about-links{
-  display: flex; 
-}
 .about-link {
   text-decoration: underline solid var(--blue) 2px;
   text-underline-offset: 2px;
@@ -510,7 +519,9 @@ main {
 .about-link:hover{
   color: var(--blue);
 }
-
+#about-blurb{
+  padding-right: 5%;
+}
 /**WIP**/
 #construction{
   display: flex;
