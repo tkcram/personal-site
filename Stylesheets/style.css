@@ -267,10 +267,11 @@ main {
 .landing-text {
   color: black;
   font-family: 'Raleway', sans-serif;
-  font-size: 52px;
+  font-size: 64px;
+  font-weight: 700;
   margin: 0;
   position: absolute;
-  text-shadow: -1px -1px 1px #000;
+  text-shadow: 1px 1px 1px #fff;
   text-transform: uppercase;
   writing-mode: vertical-lr;
   text-orientation: upright; 
@@ -287,6 +288,9 @@ main {
   position: absolute;
   width: 100%;
 }
+.landing-frame:hover .landing-overlay{
+  opacity: 0.5;
+}
 /*Landing Images*/
 #landing-reports {
   background-image: url('../images/landing_reports.png');
@@ -299,10 +303,6 @@ main {
 }
 #landing-about {
   background-image: url('../images/landing_about.png');
-}
-
-.landing-frame:hover .landing-overlay{
-  opacity: 0.5;
 }
 /**Works**/
 .works{
@@ -497,6 +497,9 @@ main {
 #about-image {
   max-width: 200px;
   border-radius: 5%;
+}
+.about-links{
+  display: flex; 
 }
 .about-link {
   text-decoration: underline solid var(--blue) 2px;

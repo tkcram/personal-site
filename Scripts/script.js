@@ -13,6 +13,13 @@ for (var button of modalButton){
   })
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var modalID = window.location.hash;
+  var modal = document.querySelector(modalID);
+  modalWrapper.style.display = "block";
+  modal.style.display = "flex";
+}, false);
+
 //Closing
 var closeButton = document.getElementsByClassName("modal-close")
 for (var button of closeButton){
@@ -39,3 +46,4 @@ window.addEventListener('keydown', function (event) {
     }
   }
 })
+
